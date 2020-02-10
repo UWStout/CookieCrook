@@ -10,16 +10,19 @@ public class playerController : MonoBehaviour
 	public Text scoreText;
 	public Text timeText;
 
+	public int startingTime;
+	public int scorePerCookie;
+
 	private int count;
-	private float time;
+	private int time;
 	private int score;
 
 	// Start is called before the first frame update
 	void Start()
     {
 		count = 0;
-		time = 300;
-		timeText.text = "300";
+		time = startingTime;
+		timeText.text = startingTime.ToString();
 		counterText.text = "Cookies: 0";
 		scoreText.text = "00000";
 		InvokeRepeating("clock", 1, 1);
@@ -42,7 +45,7 @@ public class playerController : MonoBehaviour
 		{
 			other.gameObject.SetActive(false);
 			count++;
-			score += 100;
+			score += scorePerCookie;
 			counterText.text = "Cookies: " + count.ToString();
 		}
 	}

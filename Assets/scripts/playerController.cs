@@ -12,15 +12,18 @@ public class playerController : MonoBehaviour
 
 	public int startingTime;
 	public int scorePerCookie;
+	public int lives;
 
-	private int count;
+	private int cookieCount;
 	private int time;
 	private int score;
+	private Transform entrance;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		count = 0;
+		cookieCount = 0;
+		entrance = GameObject.FindGameObjectWithTag("Entrance").transform;
 		time = startingTime;
 		timeText.text = startingTime.ToString();
 		counterText.text = "Cookies: 0";
@@ -44,9 +47,9 @@ public class playerController : MonoBehaviour
 		if (other.gameObject.CompareTag("Pick Up"))
 		{
 			other.gameObject.SetActive(false);
-			count++;
+			cookieCount++;
 			score += scorePerCookie;
-			counterText.text = "Cookies: " + count.ToString();
+			counterText.text = "Cookies: " + cookieCount.ToString();
 		}
 	}
 
@@ -68,5 +71,16 @@ public class playerController : MonoBehaviour
 		{
 			return score.ToString();
 		}
+	}
+
+	public void death()
+	{
+		cookieCount = 0;
+		transform.position = entrance.position;
+	}
+
+	public void dropOff()
+	{
+		//function to be called when dropping off cookies
 	}
 }

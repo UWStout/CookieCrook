@@ -330,6 +330,7 @@ MonoBehaviour:
   timeText: {fileID: 4922478471955382831}
   startingTime: 300
   scorePerCookie: 100
+  lives: 3
 --- !u!95 &3778560598464691441
 Animator:
   serializedVersion: 3

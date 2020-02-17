@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pick Up
   - Entrance
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,12 @@ TagManager:
   m_SortingLayers:
   - name: background
     uniqueID: 3266876839
+    locked: 0
+  - name: Walls
+    uniqueID: 2176328295
+    locked: 0
+  - name: Decorations
+    uniqueID: 3114846631
     locked: 0
   - name: Default
     uniqueID: 0

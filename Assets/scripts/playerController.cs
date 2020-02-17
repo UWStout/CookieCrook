@@ -81,6 +81,7 @@ public class playerController : MonoBehaviour
 
 	public void dropOff()
 	{
-		//function to be called when dropping off cookies
+		score += (cookieCount * 100);
+		cookieCount = 0;
 	}
 }

@@ -11,6 +11,9 @@ public class playerController : MonoBehaviour
 	public Text timeText;
 	public Text lifeText;
 
+	public Text notice;
+	private float noticeOppacity;
+
 	//UI end score overlay
 	public GameObject endOverlay;
 
@@ -28,6 +31,7 @@ public class playerController : MonoBehaviour
     {
 		cookieCount = 0;
 		score = 0;
+		noticeOppacity = 0;
 		entrance = GameObject.FindGameObjectWithTag("Entrance").transform;
 		transform.position = entrance.position;
 		time = startingTime;
@@ -35,11 +39,14 @@ public class playerController : MonoBehaviour
 		counterText.text = "Cookies: 0";
 		scoreText.text = "00000";
 		InvokeRepeating("clock", 1, 1);//call of time keeping fuction
+		notice.color = new Color(1, 1, 0, noticeOppacity);
 	}
 
 	private void Update()
 	{
 		UITextUpdate();
+		notice.color = new Color(1, 1, 0, noticeOppacity);
+		noticeOppacity -= 0.01f;
 	}
 
 	//time keeping function
@@ -47,6 +54,13 @@ public class playerController : MonoBehaviour
 	{
 		time--;
 		timeText.text = time.ToString();
+		if (time <= 0)
+		{
+			notice.text = "Out Of Time";
+			noticeOppacity = 1;
+			endOverlay.SetActive(true);
+			Time.timeScale = 0;
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -56,6 +70,18 @@ public class playerController : MonoBehaviour
 			other.gameObject.SetActive(false);
 			cookieCount++;
 			score += scorePerCookie;
+		}
+
+		//at the entrance for dropping of cookies
+		if (other.gameObject.CompareTag("Entrance"))
+		{
+			if (cookieCount > 0)
+			{
+				score += (cookieCount * scorePerCookie);
+				cookieCount = 0;
+				notice.text = "Cookies Stashed";
+				noticeOppacity = 1;
+			}
 		}
 	}
 
@@ -93,14 +119,10 @@ public class playerController : MonoBehaviour
 			endOverlay.SetActive(true);
 			Time.timeScale = 0;
 		}
+		notice.text = "You Were Seen";
+		noticeOppacity = 1;
 		cookieCount = 0;
 		transform.position = entrance.position;
-	}
-
-	public void dropOff()
-	{
-		score += (cookieCount * 100);
-		cookieCount = 0;
 	}
 
 	//getters

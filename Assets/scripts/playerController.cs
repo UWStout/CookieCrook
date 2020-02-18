@@ -9,6 +9,7 @@ public class playerController : MonoBehaviour
 	public Text counterText;
 	public Text scoreText;
 	public Text timeText;
+	public Text lifeText;
 
 	//UI end score overlay
 	public GameObject endOverlay;
@@ -33,15 +34,15 @@ public class playerController : MonoBehaviour
 		timeText.text = startingTime.ToString();
 		counterText.text = "Cookies: 0";
 		scoreText.text = "00000";
-		InvokeRepeating("clock", 1, 1);
+		InvokeRepeating("clock", 1, 1);//call of time keeping fuction
 	}
 
 	private void Update()
 	{
-		scoreText.text = scoreUpdate();
-		counterText.text = countUpdate();
+		UITextUpdate();
 	}
 
+	//time keeping function
 	private void clock()
 	{
 		time--;
@@ -58,31 +59,32 @@ public class playerController : MonoBehaviour
 		}
 	}
 
-	private string scoreUpdate()
+	//text update functions
+	private void UITextUpdate()
 	{
 		if(score == 0f)
 		{
-			return "00000";
+			scoreText.text = "00000";
 		}
 		else if(score < 1000)
 		{
-			return "00" + score.ToString();
+			scoreText.text = "00" + score.ToString();
 		}
 		else if(score < 10000)
 		{
-			return "0" + score.ToString();
+			scoreText.text = "0" + score.ToString();
 		}
 		else
 		{
-			return score.ToString();
+			scoreText.text = score.ToString();
 		}
+
+		counterText.text = "Cookies: " + cookieCount.ToString();
+
+		lifeText.text = "Lives: " + lives.ToString();
 	}
 
-	private string countUpdate()
-	{
-		return "Cookies: " + cookieCount.ToString();
-	}
-
+	//public fnctions called by other scripts
 	public void death()
 	{
 		lives--;
@@ -99,5 +101,16 @@ public class playerController : MonoBehaviour
 	{
 		score += (cookieCount * 100);
 		cookieCount = 0;
+	}
+
+	//getters
+	public int getTime()
+	{
+		return time;
+	}
+
+	public int getScore()
+	{
+		return score;
 	}
 }

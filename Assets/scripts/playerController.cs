@@ -17,10 +17,14 @@ public class playerController : MonoBehaviour
 	//UI end score overlay
 	public GameObject endOverlay;
 
+	//total number of cookies in the level
+	public int maxCookies;
+
 	public int startingTime;
 	public int scorePerCookie;
 	public int lives;
 
+	private int totalCookies;
 	private int cookieCount;
 	private int time;
 	private int score;
@@ -46,7 +50,7 @@ public class playerController : MonoBehaviour
 	{
 		UITextUpdate();
 		notice.color = new Color(1, 1, 0, noticeOppacity);
-		noticeOppacity -= 0.01f;
+		noticeOppacity -= 0.009f;
 	}
 
 	//time keeping function
@@ -78,9 +82,19 @@ public class playerController : MonoBehaviour
 			if (cookieCount > 0)
 			{
 				score += (cookieCount * scorePerCookie);
+				totalCookies += cookieCount;
 				cookieCount = 0;
 				notice.text = "Cookies Stashed";
 				noticeOppacity = 1;
+			}
+			//checks of all cookies have been collected
+			if (totalCookies == maxCookies)
+			{
+				notice.text = "Cookies Stashed and All Cookies Found";
+				noticeOppacity = 1;
+				totalCookies = 0;
+				endOverlay.SetActive(true);
+				Time.timeScale = 0;
 			}
 		}
 	}
@@ -116,13 +130,27 @@ public class playerController : MonoBehaviour
 		lives--;
 		if(lives <= 0)
 		{
+			notice.text = "Out of Lives";
 			endOverlay.SetActive(true);
 			Time.timeScale = 0;
 		}
-		notice.text = "You Were Seen";
+		else
+		{
+			notice.text = "You Were Seen";
+		}
 		noticeOppacity = 1;
+		totalCookies += cookieCount;
 		cookieCount = 0;
 		transform.position = entrance.position;
+		//checks of all cookies have been collected
+		if (totalCookies == maxCookies)
+		{
+			notice.text = "You Were Seen and All Cookies Found";
+			noticeOppacity = 1;
+			totalCookies = 0;
+			endOverlay.SetActive(true);
+			Time.timeScale = 0;
+		}
 	}
 
 	//getters

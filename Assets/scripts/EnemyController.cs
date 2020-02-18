@@ -6,6 +6,7 @@ using Pathfinding;
 public class EnemyController : MonoBehaviour
 {
 	public Transform target;
+	public Transform other;
 	public float fov = 110f;
 
 	private GameObject player;
@@ -24,14 +25,17 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.DrawRay(transform.position, transform.right + (transform.up * 0.9f), Color.red);
-		Debug.DrawRay(transform.position, -transform.right + (transform.up * 0.9f), Color.red);
+		Debug.DrawRay(transform.position, transform.right + (transform.up), Color.red);
+		Debug.DrawRay(transform.position, -transform.right + (transform.up), Color.red);
 
 		if (path.reachedDestination)
 		{
 			Debug.Log("reached destination");
 			//random path generation in a given area
-			target.position = new Vector3(Random.Range(-7.0f, 7.0f), Random.Range(-8.0f, 8.0f), 0.0f);
+			//target.position = new Vector3(Random.Range(-7.0f, 7.0f), Random.Range(-8.0f, 8.0f), 0.0f);
+
+			//destination switch from other to target and back
+			switchTarget();
 		}
 		else
 		{
@@ -47,8 +51,15 @@ public class EnemyController : MonoBehaviour
 		if(collision.CompareTag("Player") && angle < fov * 0.5f)
 		{
 			//Debug.Log("player is in sight");
-			player.GetComponent<playerController>().lives--;
 			player.GetComponent<playerController>().death();
 		}
+	}
+
+	private void switchTarget()
+	{
+		Vector3 temp;
+		temp = target.position;
+		target.position = other.position;
+		other.position = temp;
 	}
 }

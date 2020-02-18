@@ -10,6 +10,9 @@ public class playerController : MonoBehaviour
 	public Text scoreText;
 	public Text timeText;
 
+	//UI end score overlay
+	public GameObject endOverlay;
+
 	public int startingTime;
 	public int scorePerCookie;
 	public int lives;
@@ -23,7 +26,9 @@ public class playerController : MonoBehaviour
 	void Start()
     {
 		cookieCount = 0;
+		score = 0;
 		entrance = GameObject.FindGameObjectWithTag("Entrance").transform;
+		transform.position = entrance.position;
 		time = startingTime;
 		timeText.text = startingTime.ToString();
 		counterText.text = "Cookies: 0";
@@ -34,6 +39,7 @@ public class playerController : MonoBehaviour
 	private void Update()
 	{
 		scoreText.text = scoreUpdate();
+		counterText.text = countUpdate();
 	}
 
 	private void clock()
@@ -49,7 +55,6 @@ public class playerController : MonoBehaviour
 			other.gameObject.SetActive(false);
 			cookieCount++;
 			score += scorePerCookie;
-			counterText.text = "Cookies: " + cookieCount.ToString();
 		}
 	}
 
@@ -73,8 +78,19 @@ public class playerController : MonoBehaviour
 		}
 	}
 
+	private string countUpdate()
+	{
+		return "Cookies: " + cookieCount.ToString();
+	}
+
 	public void death()
 	{
+		lives--;
+		if(lives <= 0)
+		{
+			endOverlay.SetActive(true);
+			Time.timeScale = 0;
+		}
 		cookieCount = 0;
 		transform.position = entrance.position;
 	}

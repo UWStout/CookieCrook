@@ -25,11 +25,8 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-		Vector3 direction = new Vector3(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y, 0f);
 		Debug.DrawRay(transform.position, transform.right + (transform.up), Color.red);
 		Debug.DrawRay(transform.position, -transform.right + (transform.up), Color.red);
-		Debug.DrawRay(transform.position, direction);
 
 		if (path.reachedDestination)
 		{
@@ -50,12 +47,17 @@ public class EnemyController : MonoBehaviour
 	{
 		Vector2 direct = collision.transform.position - transform.position;
 		float angle = Vector2.Angle(transform.up, direct);
-		//Debug.Log(angle);
 
 		if (collision.CompareTag("Player") && angle < fov * 0.5f)
 		{
-			//Debug.Log("player is in sight");
-			player.GetComponent<playerController>().death();
+			RaycastHit2D hit = Physics2D.Raycast(transform.position, direct);
+			Debug.Log(hit.transform.name);
+
+			if (hit.transform.name == "Player")
+			{
+				//Debug.Log("player is in sight");
+				player.GetComponent<playerController>().death();
+			}
 		}
 	}
 

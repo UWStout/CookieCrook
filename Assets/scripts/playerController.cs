@@ -36,6 +36,7 @@ public class playerController : MonoBehaviour
 		cookieCount = 0;
 		score = 0;
 		noticeOppacity = 0;
+		totalCookies = 0;
 		entrance = GameObject.FindGameObjectWithTag("Entrance").transform;
 		transform.position = entrance.position;
 		time = startingTime;
@@ -51,6 +52,7 @@ public class playerController : MonoBehaviour
 		UITextUpdate();
 		notice.color = new Color(1, 1, 0, noticeOppacity);
 		noticeOppacity -= 0.009f;
+		//Debug.Log(Time.timeScale);
 	}
 
 	//time keeping function
@@ -64,6 +66,7 @@ public class playerController : MonoBehaviour
 			noticeOppacity = 1;
 			endOverlay.SetActive(true);
 			Time.timeScale = 0;
+			//Debug.Log("its the clock");
 		}
 	}
 
@@ -95,6 +98,7 @@ public class playerController : MonoBehaviour
 				totalCookies = 0;
 				endOverlay.SetActive(true);
 				Time.timeScale = 0;
+				//Debug.Log("its the entrance");
 			}
 		}
 	}
@@ -133,6 +137,7 @@ public class playerController : MonoBehaviour
 			notice.text = "Out of Lives";
 			endOverlay.SetActive(true);
 			Time.timeScale = 0;
+			//Debug.Log("its the lives");
 		}
 		else
 		{
@@ -150,6 +155,7 @@ public class playerController : MonoBehaviour
 			totalCookies = 0;
 			endOverlay.SetActive(true);
 			Time.timeScale = 0;
+			//Debug.Log("its the death and cookies");
 		}
 	}
 

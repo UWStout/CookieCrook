@@ -21,12 +21,6 @@ public class scoreOverlayController : MonoBehaviour
 
 	private int final;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 	private void OnEnable()
 	{
 		score = player.getScore();

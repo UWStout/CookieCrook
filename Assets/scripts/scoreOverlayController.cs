@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scoreOverlayController : MonoBehaviour
 {
@@ -52,8 +53,9 @@ public class scoreOverlayController : MonoBehaviour
 
 		finalScore.text = "Final Score:   " + final;
 
-		yield return new WaitForSecondsRealtime(3f);
+		yield return new WaitForSecondsRealtime(5f);
 
-		//return to the main menu
+		Time.timeScale = 1;
+		SceneManager.LoadScene(0);
 	}
 }

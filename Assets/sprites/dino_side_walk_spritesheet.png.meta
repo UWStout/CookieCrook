@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: dcf0525ce6f8ccb4fb09c0527dd6db60
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6026376054846020858
+    second: dino_side_walk_spritesheet_0
+  - first:
+      213: 8576762605089002582
+    second: dino_side_walk_spritesheet_1
+  - first:
+      213: 6874257232250110788
+    second: dino_side_walk_spritesheet_2
+  - first:
+      213: -6758335670180614396
+    second: dino_side_walk_spritesheet_3
+  - first:
+      213: 8939694390208072356
+    second: dino_side_walk_spritesheet_4
+  - first:
+      213: 7165627124715059542
+    second: dino_side_walk_spritesheet_5
+  - first:
+      213: -1738083206131919531
+    second: dino_side_walk_spritesheet_6
+  - first:
+      213: -8515139430826094911
+    second: dino_side_walk_spritesheet_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -132,7 +156,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 9
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2363e99832b7f9e40ad07b7704db0d50
+      internalID: 6026376054846020858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 7
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb1f4e12bf779241bdb83151389785f
+      internalID: 8576762605089002582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 7
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800f52000f4786a4dae9fd62e1328416
+      internalID: 6874257232250110788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 9
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcca498fa62f1c4fa44f159cd38a3e0
+      internalID: -6758335670180614396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 7
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a448aebd6f75f3440b9db8e4cb687dce
+      internalID: 8939694390208072356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 7
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534352cfeff672648b19e0abbd5fe753
+      internalID: 7165627124715059542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 7
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d87b877f33f014d92714718f5a13c3
+      internalID: -1738083206131919531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_side_walk_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 9
+        width: 105
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af717c4a0e663fb4ebcd909e831ef165
+      internalID: -8515139430826094911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

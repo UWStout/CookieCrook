@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: f395230fa71e1974493cf212adc0c2b2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8390549331833233285
+    second: dino_front_idle_spritesheet_0
+  - first:
+      213: 21902598964273422
+    second: dino_front_idle_spritesheet_1
+  - first:
+      213: -3604740329410713157
+    second: dino_front_idle_spritesheet_2
+  - first:
+      213: -7005814670313647548
+    second: dino_front_idle_spritesheet_3
+  - first:
+      213: 6043415306137061527
+    second: dino_front_idle_spritesheet_4
+  - first:
+      213: 3146628096160122097
+    second: dino_front_idle_spritesheet_5
+  - first:
+      213: -953298578489107510
+    second: dino_front_idle_spritesheet_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -132,7 +153,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e46d6246786f1d4fb66f265eda03b9b
+      internalID: 8390549331833233285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713ceffde8eb8e4882958d27f545e24
+      internalID: 21902598964273422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a651db5048f95bf49ad0439172790467
+      internalID: -3604740329410713157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0adb1e61f667e84d86e222d36f24595
+      internalID: -7005814670313647548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c0beca0a168734886d3ceb3684437a
+      internalID: 6043415306137061527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4487dbc81bea43c448aaa50f99439a99
+      internalID: 3146628096160122097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_front_idle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 6
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf407a4c9b90ab34ea85a98f841e618d
+      internalID: -953298578489107510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

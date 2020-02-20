@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: b51a6915300dcb3428db9e4107a23d4d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5299051380121796488
+    second: dino_frontwalk_idle_spritesheet_0
+  - first:
+      213: 8695012821660236953
+    second: dino_frontwalk_idle_spritesheet_1
+  - first:
+      213: -6611157810514968265
+    second: dino_frontwalk_idle_spritesheet_2
+  - first:
+      213: -9091613785745726279
+    second: dino_frontwalk_idle_spritesheet_3
+  - first:
+      213: -32088540795885655
+    second: dino_frontwalk_idle_spritesheet_4
+  - first:
+      213: -435913216158986836
+    second: dino_frontwalk_idle_spritesheet_5
+  - first:
+      213: -8077694462270961824
+    second: dino_frontwalk_idle_spritesheet_6
+  - first:
+      213: 4607833071933731846
+    second: dino_frontwalk_idle_spritesheet_7
+  - first:
+      213: 4906728745206207856
+    second: dino_frontwalk_idle_spritesheet_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -132,7 +159,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37396ccb7a38cb449193ff89143f951
+      internalID: -5299051380121796488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d028c97cd9ae0b4ab4a09137a1b2f28
+      internalID: 8695012821660236953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b02bad3ce3355045ac104876f33d039
+      internalID: -6611157810514968265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5a41d8e90250c41b7274d7f595dbce
+      internalID: -9091613785745726279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb2ca541e1c59c4fa008c44e19089ee
+      internalID: -32088540795885655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6c2d3989b15b44b962c80468d30c33
+      internalID: -435913216158986836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fc6d13998e1a3439f412f768a325a5
+      internalID: -8077694462270961824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e04c538155aa34181c362cc6f55ade
+      internalID: 4607833071933731846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_frontwalk_idle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5313be223383dc147aa9cde85e312eb6
+      internalID: 4906728745206207856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

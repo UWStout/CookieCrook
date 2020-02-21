@@ -11,10 +11,14 @@ public class scoreOverlayController : MonoBehaviour
 	public Text initialScore;
 	public Text timeScore;
 	public Text lifeScore;
+	public Text difficultyScore;
 	public Text finalScore;
 
 	//time between scores being calculated
 	public float timeBetween;
+
+	//bonus based on the difficulty of level chosen
+	public int difficultyBonus;
 
 	private int score;
 	private int timeLeft;
@@ -47,9 +51,14 @@ public class scoreOverlayController : MonoBehaviour
 
 		yield return new WaitForSecondsRealtime(timeBetween);
 
+		difficultyScore.text = "Difficulty Bonus:      " + difficultyBonus;
+
+		yield return new WaitForSecondsRealtime(timeBetween);
+
 		final += (lifeCount * 1000);
 		final += (timeLeft * 10);
 		final += score;
+		final += difficultyBonus;
 
 		finalScore.text = "Final Score:   " + final;
 

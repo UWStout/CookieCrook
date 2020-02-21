@@ -1670,6 +1670,11 @@ PrefabInstance:
       propertyPath: maxCookies
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 312619612031558511, guid: e4113b6ba9a253247977ceffa08d6691,
+        type: 3}
+      propertyPath: difficultyBonus
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4113b6ba9a253247977ceffa08d6691, type: 3}
 --- !u!1 &476719533

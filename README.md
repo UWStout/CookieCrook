@@ -24,4 +24,4 @@
  Katherin Valentine - Artist
  Aly Shaw - Programer
  
- ![Cookie Crook Menu Art](https://media.githubusercontent.com/media/UWStout/CookieCrook/master/Assets/sprites/main%20menu%20clipping.png)
+ ![Cookie Crook Menu Art](https://media.githubusercontent.com/media/UWStout/CookieCrook/master/Assets/sprites/GameTitleClipping.png)

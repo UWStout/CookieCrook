@@ -15,13 +15,13 @@
   level you will be awarded bonus points based on lives left, time left, and a diffiulty bonus based on the level played.
   
 *KEYBOARD MAPPINGS*
-  You can move your dinosouar using the WASD keys or the arrow keys.
-  You use the mouse to navigate the main menu.
+  * You can move your dinosouar using the WASD keys or the arrow keys.
+  * You use the mouse to navigate the main menu.
   
 *CREDITS*
- Nicholas Wood - programer
- Emily Pickhardt - Artist
- Katherin Valentine - Artist
- Aly Shaw - Programer
+  * Nicholas Wood - programer
+  * Emily Pickhardt - Artist
+  * Katherin Valentine - Artist
+  * Aly Shaw - Programer
  
  ![Cookie Crook Menu Art](https://media.githubusercontent.com/media/UWStout/CookieCrook/master/Assets/sprites/GameTitleClipping.png)

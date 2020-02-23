@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-	Animator anim;
+	//animator to interact with the sprite
+	private Animator anim;
 
-	Rigidbody2D rb;
+	//varibles for movement
+	private Rigidbody2D rb;
 	public float speed = 5f;
-	Vector2 movement;
+	private Vector2 movement;
 
 	// Start is called before the first frame update
 	void Start()
 	{
+		//initliation of private varibles
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
@@ -26,10 +29,11 @@ public class playerMovement : MonoBehaviour
 
 	void Update()
 	{
-		//input
+		//input from the keyboard
 		movement.x = Input.GetAxis("Horizontal");
 		movement.y = Input.GetAxis("Vertical");
 
+		//handles the sprites change in direction
 		movmentDirection();
 
 	}

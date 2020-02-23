@@ -31,6 +31,7 @@ public class EnemyController : MonoBehaviour
 		if (path.reachedDestination)
 		{
 			Debug.Log("reached destination");
+
 			//random path generation in a given area
 			//target.position = new Vector3(Random.Range(-7.0f, 7.0f), Random.Range(-8.0f, 8.0f), 0.0f);
 
@@ -39,23 +40,29 @@ public class EnemyController : MonoBehaviour
 		}
 		else
 		{
+			//leaves the destination the same
 			destination.target = target;
 		}
 	}
 
+	// handles all the death logic
 	private void OnTriggerStay2D(Collider2D collision)
 	{
+		//calculates the angle of the player from the direction the enemy is facing for FOV checks
 		Vector2 direct = collision.transform.position - transform.position;
 		float angle = Vector2.Angle(transform.up, direct);
 
+		//checks if the player is close enough and in the FOV of the enemy
 		if (collision.CompareTag("Player") && angle < fov * 0.5f)
 		{
+			//calculates line of sight
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, direct);
 			Debug.Log(hit.transform.name);
 
+			//checks if the enemy has line of sight on the player
 			if (hit.transform.name == "Player")
 			{
-				//Debug.Log("player is in sight");
+				//calls player death fuction
 				player.GetComponent<playerController>().death();
 			}
 		}

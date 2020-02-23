@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 5029852810625736653}
   other: {fileID: 5029852810718549187}
-  fov: 90
+  fov: 120
 --- !u!114 &5029852810273830591
 MonoBehaviour:
   m_ObjectHideFlags: 0

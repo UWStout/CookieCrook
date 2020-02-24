@@ -1,7 +1,7 @@
 # CookieCrook
 
 *INSTALLATION REQUIMENTS*
-  1. open the build folder in there you will find an HTML file
+  1. download the buildFiles folder in there you will find an HTML file
   2. to play the game on a browser you will first need firefox browser instaled
   3. after that your going to need to change setting on the browser to be able to open the file in the browser
   4. follow the steps in this viedo showing you what seeting to change https://www.youtube.com/watch?v=Mdi-5I8fDM0

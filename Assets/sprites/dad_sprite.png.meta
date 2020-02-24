@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 785596a73ec7e6c4a8a35966fc44a525
+guid: 938661d4c61645846ac3c7f808cb079f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2566791840715176196
-    second: enemy_sprite_0
+      213: -682156247775520744
+    second: dad_sprite_0
   - first:
-      213: 7944878729352474619
-    second: enemy_sprite_1
+      213: 427236315560443439
+    second: dad_sprite_1
   - first:
-      213: 462536456465309483
-    second: enemy_sprite_2
-  - first:
-      213: 4108637048288448766
-    second: enemy_sprite_3
+      213: -257710670089679778
+    second: dad_sprite_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -146,11 +143,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_sprite_0
+      name: dad_sprite_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 27
+        x: 5
+        y: 9
         width: 31
         height: 61
       alignment: 0
@@ -160,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f564ee96762a8143b6410fdb397283d
-      internalID: -2566791840715176196
+      spriteID: 3d2177eee1d6eaa44b76a10171b63148
+      internalID: -682156247775520744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_sprite_1
+      name: dad_sprite_1
       rect:
         serializedVersion: 2
-        x: 52
-        y: 27
-        width: 23
+        x: 37
+        y: 9
+        width: 26
         height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3e21fdd29a0ca34e804a927d41d6841
-      internalID: 7944878729352474619
+      spriteID: 6461ab8f721d1e54fb8fd80bf16e3291
+      internalID: 427236315560443439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_sprite_2
+      name: dad_sprite_2
       rect:
         serializedVersion: 2
-        x: 92
-        y: 18
-        width: 19
-        height: 38
+        x: 64
+        y: 9
+        width: 31
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,29 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e221a312438926498c01701e5dcf654
-      internalID: 462536456465309483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 18
-        width: 15
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5557f34bbd54a24fb1528d605bd1401
-      internalID: 4108637048288448766
+      spriteID: a2f941928e4fddc4d990698781b21cf5
+      internalID: -257710670089679778
       vertices: []
       indices: 
       edges: []

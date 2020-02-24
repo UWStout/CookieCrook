@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2018192976284052962}
   - component: {fileID: 7624700490618280085}
   - component: {fileID: 2109841592824225699}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5029852809689407145}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: 2DEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 5029852810273830531}
   - component: {fileID: 5029852810273830584}
   - component: {fileID: 5029852810273830590}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5029852810625736653}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5029852810718549187}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Other
   m_TagString: Untagged
   m_Icon: {fileID: 0}
